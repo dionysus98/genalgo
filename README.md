@@ -1,10 +1,10 @@
 # genetic
 
-FIXME: my new application.
+Following the book [Nature of code](https://natureofcode.com/book/chapter-9-the-evolution-of-code/)
 
 ## Installation
 
-Download from https://github.com/genetic/genetic
+Clone from `git clone https://github.com/dionysus98/genalgo.git`
 
 ## Usage
 
