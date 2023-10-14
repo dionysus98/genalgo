@@ -9,13 +9,11 @@
       (println (-> (select-keys p  [:best :generations :best-dna])
                    (update :best-dna :fitness)))
       (if (:finished? p)
-        #_(or (:finished? p) (= (:generations p) 250))
         (select-keys p [:best
                         :best-dna
                         :generations
                         :target])
-        (recur (->> p
-                    popl/calc-fitness
+        (recur (->> p popl/calc-fitness
                     popl/natural-selection
                     popl/generate
                     popl/calc-fitness

@@ -3,6 +3,7 @@
             [clojure.tools.cli :refer [parse-opts]])
   (:gen-class))
 
+
 (defn init! [& {:keys [phrase
                        mutation-rate
                        maximum-population
@@ -65,4 +66,4 @@
       err (println (str err "\n" sum))
       (:help opts) (println sum)
       (:default opts) (init! opts)
-      :else (init! opts)))) 
+      :else (init! opts))))
